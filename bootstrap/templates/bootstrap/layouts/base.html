@@ -14,9 +14,14 @@
     {% block css_bootstrap %}
         <link href="{{ STATIC_URL }}css/bootstrap{{ debugmin() }}.css" rel="stylesheet">
     {% endblock %}
-    {% block css_bootstrap_responsive %}
-        <link href="{{ STATIC_URL }}css/bootstrap-responsive{{ debugmin() }}.css" rel="stylesheet">
+
+    {% block css_bootstrap_theme %}
+    <link href="{{ STATIC_URL }}css/bootstrap.theme.{{ debugmin() }}.css" rel="stylesheet">
     {% endblock %}
+
+    {# block css_bootstrap_responsive %}
+        <link href="{{ STATIC_URL }}css/bootstrap-responsive{{ debugmin() }}.css" rel="stylesheet">
+    {% endblock #}
     {% block css_site %}
     {% endblock %}
     {% block css_extra %}
